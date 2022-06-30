@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * function_name: main
- * Description: prints string
- * Return: 0
+ * main - simple puts string
+ *
+ * return: Alway 0 (Success)
  */
 
 int main(void)
