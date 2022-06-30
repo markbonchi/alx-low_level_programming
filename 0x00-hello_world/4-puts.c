@@ -3,7 +3,7 @@
 /**
  * main - simple puts string
  *
- * return: Alway 0 (Success)
+ * Return: Alway 0 (Success)
  */
 
 int main(void)
