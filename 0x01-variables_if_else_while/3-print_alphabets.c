@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * main - Enter
  *
@@ -19,7 +20,7 @@ int main(void)
 
 	for (i = 0; i < (int)strlen(a); i++)
 	{
-		putchar(toupper(a[i])'\n')
+		putchar(toupper(a[i]));
 	}
 	return (0);
 }
