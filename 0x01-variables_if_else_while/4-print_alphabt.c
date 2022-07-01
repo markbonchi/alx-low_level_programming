@@ -15,7 +15,7 @@ int main(void)
 	i = 0;
 	while (i < (int)strlen(a))
 	{
-		if (a[i] == 'e' || a[i] == 'q')
+		if (a[i] == 'e')
 		{
 			continue;
 		} else
