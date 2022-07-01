@@ -17,6 +17,9 @@ int main(void)
 		if (a[i] != a['e'] && a[i] != a['q'])
 		{
 			putchar(a[i]);
+		} else
+		{
+			putchar();
 		}
 	}
 	putchar('\n');
