@@ -12,9 +12,9 @@ int main(void)
 	const char a[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i < strlen(a); i++)
+	for (i = 0; i < (int)strlen(a); i++)
 	{
-		printf("%c", a[i]);
+		putchar(a[i]);
 	}
 	return (0);
 }
