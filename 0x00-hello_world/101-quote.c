@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/*
- * main - peinting output in stderr
+/**
+ * main - printing output in stderr
  *
+ * Description: String output printed to the standard output
  * Return: value 1 (Failure)
  */
 
@@ -13,6 +14,7 @@ int main(void)
 	int yr = 2015;
 	int mon = 10;
 	int dt = 19;
+
 	fprintf(stderr, "%s\" - %s, %d-%d-%d\n", quote, ref, yr, mon, dt);
 	return (1);
 }
