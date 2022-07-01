@@ -22,6 +22,6 @@ int main(void)
 	{
 		putchar(toupper(a[i]));
 	}
-	putchar("\n")
+	putchar('\n');
 	return (0);
 }
