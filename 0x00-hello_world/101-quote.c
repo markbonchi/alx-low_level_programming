@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * main - print string to standard error
@@ -9,7 +10,7 @@
 
 int main(void)
 {
-	char msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	write(STDERR_FILENO, msg);
+	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	fflush("stderr")
 	return (1);
 }
