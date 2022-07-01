@@ -12,7 +12,8 @@ int main(void)
 	const char a[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i < (int)strlen(a); i++)
+	i = 0;
+	while (i < (int)strlen(a))
 	{
 		if (a[i] == 'e' && a[i] == 'q')
 		{
@@ -21,6 +22,7 @@ int main(void)
 		{
 			putchar(a[i]);
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
