@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	const char a[] = "abcdefghijklmnopqrstuvwxyz";
+	const char a[] = "abcdefghijklmnopqrstuvwxyz\n";
 	int i;
 
 	for (i = 0; i < (int)strlen(a); i++)
