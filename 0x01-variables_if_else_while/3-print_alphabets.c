@@ -20,7 +20,8 @@ int main(void)
 
 	for (i = 0; i < (int)strlen(a); i++)
 	{
-		putchar(toupper(a[i])"\n");
+		putchar(toupper(a[i]));
 	}
+	putchar("\n")
 	return (0);
 }
