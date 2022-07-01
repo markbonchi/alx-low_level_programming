@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - Enter
@@ -13,8 +14,8 @@ int main(void)
 	char a;
 	int i;
 
-	a[] = "abcdefghijklmnopqrstuvwxyz";
-	len = strlen(a);
+	a = "abcdefghijklmnopqrstuvwxyz";
+	len = (int)strlen(a);
 
 	for (i = 0; i < len; i++)
 	{
