@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 /**
  * main - Enter
  *
@@ -10,14 +9,10 @@
 
 int main(void)
 {
-	int len;
-	char a;
+	const char a[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	a = "abcdefghijklmnopqrstuvwxyz";
-	len = (int)strlen(a);
-
-	for (i = 0; i < len; i++)
+	for (i = 0; i < strlen(a); i++)
 	{
 		printf("%c", a[i]);
 	}
