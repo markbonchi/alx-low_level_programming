@@ -1,15 +1,13 @@
-#include <stdio.h>
-#include <errno.h>
-#include <string.h>
+#include <unistd.h>
 
 /**
  * main - print string to standard error
  *
- * Return: returns th value 1
+ * Return: returns th value 1 (Failure)
  */
 
 int main(void)
 {
-	perror(stderr, "and that piece of art is useful\" -Dora Korpar, 2015-10-19");
+	write(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
 	return (1);
 }
