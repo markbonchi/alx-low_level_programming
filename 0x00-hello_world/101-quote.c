@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 /**
@@ -10,12 +11,6 @@
 
 int main(void)
 {
-	char quote[] = "and that piece of art is useful";
-	char auth[] = "Dora Korpar";
-	int yr = 2015;
-	int mon = 10;
-	int date = 19;
-
-	fprintf(stderr, "%s\" - %s, %d-%d-%d\n", quote, auth, yr, mon, date);
+	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19", 59);
 	return (1);
 }
