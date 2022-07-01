@@ -1,14 +1,13 @@
-#include <iostream>
-using namespace std
+#include <stdio.h>
 
 /*
- * main - print error output
+ * main - peinting output in stderr
  *
  * Return: value 1 (Failure)
  */
 
 int main(void)
 {
-	cerr << "and that poece of artis useful\" - Dora Korpar 2015-19-19\n";
-	return (1)
+	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar 2015-10-19\n");
+	return (1);
 }
