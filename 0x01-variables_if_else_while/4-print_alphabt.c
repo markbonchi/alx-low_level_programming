@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0; i < (int)strlen(a); i++)
 	{
-		if (a[i] != "e" || a[i] != "q")
+		if (a[i] != a['e'] || a[i] != a['q'])
 		{
 			putchar(a[i]);
 		}
