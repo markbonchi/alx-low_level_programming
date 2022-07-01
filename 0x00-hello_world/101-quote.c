@@ -8,6 +8,11 @@
 
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char quote[] = "and that piece of art is useful";
+	char ref[] = "Dora Korpar";
+	int yr = 2015;
+	int mon = 10;
+	int dt = 19;
+	fprintf(stderr, "%s\" - %s, %d-%d-%d\n", quote, ref, yr, mon, dt);
 	return (1);
 }
