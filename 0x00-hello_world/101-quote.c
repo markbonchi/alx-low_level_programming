@@ -6,12 +6,12 @@
  * main - printing output in stderr
  *
  * Description: String output printed to the standard output
- * Return: value 1 (Failure)
+ * Return: Always 1 (Success)
  */
 
 int main(void)
 {
-	write(STDERR_FILENO, "and that piece of art is useful\" - Dora Korpar,\
-	2015-10-19\n", 59);
+	write(STDERR_FILENO, "and that piece of art is useful\" \
+- Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
