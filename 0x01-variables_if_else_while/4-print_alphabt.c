@@ -15,10 +15,7 @@ int main(void)
 	i = 0;
 	while (i < (int)strlen(a))
 	{
-		if (a[i] == 'e')
-		{
-			continue;
-		} else
+		if (a[i] != 'e')
 		{
 			putchar(a[i]);
 		}
