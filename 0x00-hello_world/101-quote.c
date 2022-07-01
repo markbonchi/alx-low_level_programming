@@ -1,16 +1,14 @@
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
+#include <iostream>
+using namespace std
 
-/**
- * main - print string to standard error
+/*
+ * main - print error output
  *
- * Return: returns th value 1 (Failure)
+ * Return: value 1 (Failure)
  */
 
 int main(void)
 {
-	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
-	fflush("stderr")
-	return (1);
+	cerr << "and that poece of artis useful\" - Dora Korpar 2015-19-19\n";
+	return (1)
 }
