@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <errno.h>
 #include <string.h>
 
@@ -9,6 +10,6 @@
 
 int main(void)
 {
-	perror("and that piece of art is useful\" -Dora Korpar, 2015-10-19");
+	perror(stderr, "and that piece of art is useful\" -Dora Korpar, 2015-10-19");
 	return (1);
 }
