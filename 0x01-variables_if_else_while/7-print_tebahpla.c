@@ -12,7 +12,7 @@ int main(void)
 	const char a[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = (int)strlen(a) - 1; i > 0; i--)
+	for (i = (int)strlen(a) - 1; i >= 0; i--)
 	{
 		putchar(a[i]);
 	}
