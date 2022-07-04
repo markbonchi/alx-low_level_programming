@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (k = '0'; k <= '9'; k++)
 			{
-				for (y = '1'; y <= '9'; y++)
+				for (y = '0'; y <= '9'; y++)
 				{
 					if (i <= k && j < y)
 					{
