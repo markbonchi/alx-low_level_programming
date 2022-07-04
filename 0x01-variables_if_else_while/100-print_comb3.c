@@ -11,16 +11,12 @@ int main(void)
 {
 	int i;
 	int j;
-	char a;
-	char b;
 
 	for (i = '0'; i < '9'; i++)
 	{
 		for (j = '1'; j < '9'; j++)
 		{
-			a = ij;
-			b = ji;
-			if (a != b)
+			if ((i * j) != (j * i))
 			{
 				putchar(i);
 				putchar(j);
