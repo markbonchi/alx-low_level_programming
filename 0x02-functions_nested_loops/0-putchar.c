@@ -4,7 +4,7 @@
  * main - print _putchar using _putchar function
  *
  *
- * Return: 1 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
@@ -18,5 +18,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return (1)
+	return (0);
 }
