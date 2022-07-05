@@ -4,10 +4,10 @@
 /**
  * print_alphabet - prints letters in lowercase
  *
- * Return: 1 (Success)
+ * Return: 0
  */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	int i;
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
@@ -17,5 +17,4 @@ int print_alphabet(void)
 		_putchar(alpha[i]);
 	}
 	_putchar('\n');
-	return (1);
 }
