@@ -9,28 +9,29 @@
 
 int main(void)
 {
-	int i, j;
-	int k, y;
+	int i = '0', j = '0';
+	int k = '0', y = '0';
 
-	for (i = '0', j = '0'; i <= '9' && j <= '9'; i++, j++)
+	while (i <= '9', j <= '9')
 	{
-		for (k = '0', y = '0'; k <= '9' && y <= '9'; k++, y++)
+		while (k <= '9', y <= '9')
 		{
 			putchar(i);
 			putchar(j);
 			putchar(' ');
-			if ((i <= k) || (i == k && j < y))
-			{
-				putchar(k);
-				putchar(y);
-			}
+			putchar(k);
+			putchar(y);
 			if (i == '9' && j == '8' && k == '9' && y == '9')
 			{
 				break;
 			}
 			putchar(',');
 			putchar(' ');
+			k++;
+			y++;
 		}
+		i++;
+		j++;
 	}
 	putchar('\n');
 	return (0);
