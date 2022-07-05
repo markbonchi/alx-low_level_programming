@@ -9,40 +9,27 @@
 
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int y;
+	int i, j;
+	int k, y;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = '0', j = '0'; i <= '9', j <= '9'; i++, j++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (k = '0', y = '0'; k <= '9', y <= '9'; k++, y++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			putchar(i);
+			putchar(j);
+			putchar(' ');
+			if ((i <= k) || (i == k && j < y))
 			{
-				for (y = '0'; y <= '9'; y++)
-				{
-					if (i <= k && j < y)
-					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(y);
-						if (i == '9' && j == '8' && k == '9' && y == '9')
-						{
-							break;
-						} else
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					} else
-					{
-						continue;
-					}
-				}
+				putchar(k);
+				putchar(y);
 			}
+			if (i == '9' && j == '8' && k == '9' && y == '9')
+			{
+				break;
+			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
