@@ -4,7 +4,7 @@
 /**
  * print_alphabet - prints letters in lowercase
  *
- * Return: 0 (Success)
+ * Return: 1 (Success)
  */
 
 int print_alphabet(void)
@@ -16,5 +16,5 @@ int print_alphabet(void)
 	{
 		_putchar(alpha[i]);
 	}
-	return (0);
+	_putchar('\n');
 }
