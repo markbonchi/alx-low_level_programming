@@ -1,21 +1,12 @@
 #include <stdio.h>
 
 /**
- * natural_35 - prints multiples of 3_&_5
  * main - Entry
  *
  * Return: 0
  */
 
-int natural_35(void);
-
 int main(void)
-{
-	int natural_35();
-	return (0);
-}
-
-int natural_35(void)
 {
 	int n, i = 0;
 
