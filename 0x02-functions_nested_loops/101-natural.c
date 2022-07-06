@@ -1,11 +1,19 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  * natural_35 - prints multiples of 3_&_5
+ * main - Entry
  *
  * Return: 0
  */
+
+long int natural_35(void);
+
+int main(void)
+{
+	long int natural_35();
+	return (0);
+}
 
 long int natural_35(void)
 {
@@ -19,5 +27,5 @@ long int natural_35(void)
 		}
 	}
 	printf("%lu\n", (long int)i);
-	return (0);
 }
+
