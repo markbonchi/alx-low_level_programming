@@ -15,7 +15,7 @@ int main(void)
 	return (0);
 }
 
-long int natural_35(void)
+int natural_35(void)
 {
 	int n, i = 0;
 
@@ -26,7 +26,7 @@ long int natural_35(void)
 			i += n;
 		}
 	}
-	printf("%lu\n", (long int)i);
+	printf("%d\n", i);
 	return (0);
 }
 
