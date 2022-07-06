@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-long int natural_35(void);
+int natural_35(void);
 
 int main(void)
 {
