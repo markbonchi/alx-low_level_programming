@@ -2,12 +2,12 @@
 
 
 /**
- * times_table - prints times tables
+ * print_times_table - prints times tables
  * @n: int argument of function to be timesed
  * Return: 0
  */
 
-void times_table(int n)
+void print_times_table(int n)
 {
 	int i, j, k;
 
@@ -35,7 +35,7 @@ void times_table(int n)
 					_putchar(' ');
 					_putchar(k / 10 + '0');
 					_putchar(k % 10 + '0');
-				} else if ( >= 100)
+				} else if (k >= 100)
 				{
 					_putchar(',');
 					_putchar(' ');
