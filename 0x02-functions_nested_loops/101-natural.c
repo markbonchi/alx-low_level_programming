@@ -27,5 +27,6 @@ long int natural_35(void)
 		}
 	}
 	printf("%lu\n", (long int)i);
+	return (0);
 }
 
