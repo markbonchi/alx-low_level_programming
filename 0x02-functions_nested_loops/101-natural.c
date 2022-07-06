@@ -11,7 +11,7 @@ long int natural_35(void);
 
 int main(void)
 {
-	long int natural_35();
+	int natural_35();
 	return (0);
 }
 
