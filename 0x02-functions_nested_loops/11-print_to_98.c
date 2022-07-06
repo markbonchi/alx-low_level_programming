@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - prints numbers to _98
- *
+ * @n: int argument of function for reference
  * Return: 0
  */
 
