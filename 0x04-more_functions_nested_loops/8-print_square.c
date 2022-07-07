@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_suare - as the name implies
- * @n: int argument of function for unit length of line
+ * print_square - as the name implies
+ * @size: int argument of function for unit area
  * Return: void
  */
 
