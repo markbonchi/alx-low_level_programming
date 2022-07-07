@@ -21,7 +21,7 @@ void more_numbers(void)
 					_putchar(i);
 				}
 				_putchar(j);
-				if (j == '4')
+				if (i == '1' && j == '4')
 				{
 					break;
 				}
