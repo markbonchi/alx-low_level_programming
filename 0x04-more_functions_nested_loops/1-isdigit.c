@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _isupper - checks for upper case characters
- * @c: int argument of function for ASCII comparison
+ * _isdigit - checks for upper case characters
+ * @c: int argument of function for comparison
  * Return: 1 if upper, 0 if no match
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
 	{
