@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isdigit - checks for upper case characters
+ * mul - multiplies tw ints
  * @a: first int argument of function
  * @b: second int argument for function
  * Return: i
