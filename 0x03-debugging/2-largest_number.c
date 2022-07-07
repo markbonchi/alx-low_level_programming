@@ -15,53 +15,17 @@ int largest_number(int a, int b, int c)
 	d = a - b;
 	e = b - c;
 	f = a - c;
-	if (d != 0 && e != 0 && f != 0)
+	if (d > 0 && f > 0)
 	{
-		if (d > 0 && f > 0)
-		{
-			largest = a;
-		}
-		else if (e > 0 && d < 0)
-		{
-			largest = b;
-		}
-		else if (f < 0 && e < 0)
-		{
-			largest = c;
-		}
+		largest = a;
 	}
-	else if (d == 0)
+	else if (e > 0 && d < 0)
 	{
-		if (f > 0)
-		{
-			largest = a;
-		}
-		else
-		{
-			largest = c;
-		}
+		largest = b;
 	}
-	else if (e == 0)
+	else if (f < 0 && e < 0)
 	{
-		if  (d > 0)
-		{
-			largest = a;
-		}
-		else
-		{
-			largest = b;
-		}
-	}
-	else if (f == 0)
-	{
-		if (e > 0)
-		{
-			largest = b;
-		}
-		else
-		{
-			largest = a;
-		}
+		largest = c;
 	}
 
 	return (largest);
