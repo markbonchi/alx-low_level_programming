@@ -2,7 +2,7 @@
 
 /**
  * print_rev - print string in reverse
- * @s - pointer variable for string
+ * @s: pointer variable for string
  */
 
 void print_rev(char *s)
@@ -17,7 +17,7 @@ void print_rev(char *s)
 	}
 	for (i = len; i >= 0; i--)
 	{
-		_putchar(*s[i]);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
