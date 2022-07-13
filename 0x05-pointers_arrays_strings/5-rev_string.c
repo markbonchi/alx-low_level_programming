@@ -14,12 +14,8 @@ void rev_string(char *s)
 
 	for (i = strlen(s) - 1; i >= 0; i--)
 	{
-		j = 0;
-		while (j <= i)
-		{
-			rev[j] = s[i];
-			j++;
-		}
+		rev[j] = s[i];
+		j++;
 	}
 	printf("%s\n", rev);
 }
