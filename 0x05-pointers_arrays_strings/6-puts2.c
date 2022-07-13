@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _puts2 - print out string by index +2
+ * puts2 - print out string by index +2
  * @str: string pointer variable
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	while (*str != '\0')
 	{
