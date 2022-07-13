@@ -27,8 +27,7 @@ void puts_half(char *str)
 		{
 			if (str[i] != '\0')
 			{
-:x
-
+				_putchar(str[i]);
 			}
 		}
 	}
