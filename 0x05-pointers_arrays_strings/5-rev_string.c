@@ -12,9 +12,10 @@ void rev_string(char *s)
 	char rev;
 
 	len1 = 0;
-	while (*s)
+	while (*s != '\0')
 	{
 		len1++;
+		s++;
 	}
 
 	len2 = len1 - 1;
