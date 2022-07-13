@@ -3,7 +3,8 @@
 #include <string.h>
 
 /**
- *
+ * puts_half - print half of a string
+ * @str: pointer for string var address
  */
 
 void puts_half(char *str)
@@ -19,8 +20,10 @@ void puts_half(char *str)
 		}
 	} else
 	{
-		for (i = (len -1) / 2; i < len; i++)
+		for (i = (len - 1) / 2; i < len; i++)
 		{
+			_putchar(str[i]);
 		}
 	}
+	_putchar('\n');
 }
