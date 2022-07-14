@@ -1,7 +1,12 @@
 #include "main.h"
 
 /**
+ * _strncat - concatenatetwo strings up to point n
+ * @dest: destination string
+ * @src: source string
+ * @n: number of characters to finish
  *
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n);
@@ -15,7 +20,7 @@ char *_strncat(char *dest, char *src, int n);
 		len++;
 		j++;
 	}
-	for (i = 0; i < n || src[i] != '\0'; i++)
+	for (i = 0; i < n; i++)
 	{
 		dest[len] = src[i];
 		len++;
