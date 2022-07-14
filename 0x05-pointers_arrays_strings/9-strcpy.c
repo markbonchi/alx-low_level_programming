@@ -2,7 +2,7 @@
 
 /**
  * _strcpy - copy strings
- * @dest: destination 
+ * @dest: destination
  * @src: source string
  *
  * Return: dest
