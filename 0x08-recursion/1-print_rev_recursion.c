@@ -2,6 +2,8 @@
 #include <string.h>
 
 /**
+ * _print_rev_recursion - print the revers of a string
+ * @s: sttring parameter
  */
 
 void _print_rev_recursion(char *s)
