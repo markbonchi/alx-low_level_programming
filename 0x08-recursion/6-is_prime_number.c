@@ -14,6 +14,13 @@ int is_prime_number(int n)
 	return (prime(n, 1));
 }
 
+/**
+ * prime - compare through possible prime numbers
+ * @n: input int parameter
+ * @val: counter parameter
+ * Return: 1
+ */
+
 int prime(int n, int val)
 {
 	int i, j;
