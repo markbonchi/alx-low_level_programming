@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 /**
- * main - print name
- * @argc: no of arguments
- * @argv: array of arguments
- * Return: 0 (success), 1 (Error)
+ * isIntegar - checks the vakue of an int
+ * @s: char parameter to check
+ * Return: 0 || 1
  */
 
 int isIntegar(const char *s)
@@ -22,6 +21,13 @@ int isIntegar(const char *s)
 	}
 	return (0);
 }
+
+/**
+ * main - add positive numbers
+ * @argc: int argument
+ * @argv: array argument
+ * Return: 0 || 1
+ */
 
 int main(int argc, char *argv[])
 {
