@@ -8,13 +8,28 @@
  * Return: 0 (success), 1 (Error)
  */
 
+int isIntegar(const char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] < '0' || s[i] > '9')
+		{
+			return (1);
+		}
+		i++;
+	}
+	return (0);
+}
+
 int main(int argc, char *argv[])
 {
 	int i, add = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (i > 0 && !isdigit(atoi(argv[i])))
+		if (isIntegar(argv[i]) && i > 0)
 		{
 			printf("Error\n");
 			return (1);
