@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * create_array - creates an array of char c
+ * @size: size of array
+ * @c: elements of array
+ * Return: ptr || NULL
  */
 
 char *create_array(unsigned int size, char c)
