@@ -3,6 +3,7 @@
 /**
  * _strdup - returns pointer to copy of string given
  * @str: string parameter
+ * Return: ptr || NULL
  */
 
 char *_strdup(char *str)
