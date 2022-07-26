@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * str_concat - Concatenates two strings
+ * @s1: first string pointer
+ * @s2: second string pointer
+ * Return: ptr || NULL
  */
 
 char *str_concat(char *s1, char *s2)
