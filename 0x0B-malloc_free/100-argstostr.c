@@ -7,7 +7,7 @@
  * Return: s || NULL
  */
 
-char *argstostr(int ac, char **av);
+char *argstostr(int ac, char **av)
 {
 	int i, size = 0, j, num = 0;
 	char *s;
