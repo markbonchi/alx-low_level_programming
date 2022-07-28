@@ -1,6 +1,9 @@
 #include "main.h"
 
 /**
+ * malloc_checked - allocates memory using malloc
+ * @b: int argument
+ * Return: 98 (Fail)
  */
 
 void *malloc_checked(unsigned int b)
