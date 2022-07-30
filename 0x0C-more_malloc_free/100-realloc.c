@@ -5,6 +5,8 @@
  * @ptr: address to mem block
  * @old_size: int
  * @new_size: int
+ * @dest: destination
+ * @src: source
  */
 
 void _memcpy(void *dest, void *src, size_t n);
@@ -21,7 +23,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	} else if (ptr != NULL)
 	{
 		return (malloc(new_size));
-	} else if (new_size <= old_size)
+	} else if (old_size < new_size)
+	{
+		return (ptr);
+	} else if (new_size == old_size)
 	{
 		return (ptr);
 	} else
@@ -31,13 +36,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		{
 			_memcpy(newptr, ptr, old_size);
 			free(ptr);
-		} else
-			return (NULL);
+		}
 		return (newptr);
 	}
 }
 
 /**
+ * _memcpy - copy n bytes
+ * @dest: destinsation
+ * @src: source
  */
 
 void _memcpy(void *dest, void *src, size_t n)
