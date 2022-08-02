@@ -7,3 +7,5 @@ struct dog
 	char *owner;
 	float agr;
 };
+
+#endif
