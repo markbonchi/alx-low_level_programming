@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- * print_numbers - prints a list of numbers
+ * print_strings - prints a list of strings
  * @separator: string inbetween
  * @n: int parameter
  */
