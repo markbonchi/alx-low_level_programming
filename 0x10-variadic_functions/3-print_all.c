@@ -4,6 +4,9 @@
 #include <stddef.h>
 
 /**
+ * print_all - prints anything by flags
+ * @format: input string
+ * @i: int parameter
  */
 
 void separator(size_t i, const char *const format);
@@ -48,7 +51,7 @@ void print_all(const char *const format, ...)
 				separator(i, format);
 				break;
 			default:
-				break;	
+				break;
 		}
 		i++;
 	}
@@ -57,6 +60,9 @@ void print_all(const char *const format, ...)
 }
 
 /**
+ * separator - prints between output string characters
+ * @i: int argument
+ * @format: string
  */
 
 void separator(size_t i, const char *const format)
