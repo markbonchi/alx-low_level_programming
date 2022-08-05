@@ -51,9 +51,12 @@ void vprint_all(const char *const format, va_list vp)
 			case 's':
 				str = va_arg(vp, char *);
 				if (str == NULL)
+				{
 					printf("(nil)");
-				else
-					printf("%s", str);
+					separator(i, format);
+					break;
+				}
+				printf("%s", str);
 				separator(i, format);
 				break;
 			default:
