@@ -6,29 +6,17 @@
 /**
  */
 
-void vprint_all(const char *const format, va_list vp);
 void separator(size_t i, const char *const format);
 
 void print_all(const char *const format, ...)
 {
 	va_list vp;
-
-	va_start(vp, format);
-	vprint_all(format, vp);
-	va_end(vp);
-}
-
-
-/**
- */
-
-void vprint_all(const char *const format, va_list vp)
-{
 	char ch, *str;
 	int num;
 	double nf;
 	size_t i = 0;
 
+	va_start(vp, format);
 	while (format[i] != '\0')
 	{
 		switch (format[i])
@@ -64,6 +52,7 @@ void vprint_all(const char *const format, va_list vp)
 		}
 		i++;
 	}
+	va_end(vp);
 	printf("\n");
 }
 
@@ -74,6 +63,5 @@ void separator(size_t i, const char *const format)
 {
 	if (format[i + 1] != '\0')
 		printf(", ");
-	else
-		return;
 }
+
