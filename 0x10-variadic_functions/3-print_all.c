@@ -11,17 +11,6 @@
 
 void separator(size_t i, const char *const format);
 
-/**
- * _putchar - printd character
- * @c: ascii character
- * Return: write
- */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
 void print_all(const char *const format, ...)
 {
 	va_list vp;
@@ -32,7 +21,7 @@ void print_all(const char *const format, ...)
 
 	while (format == NULL || vp == NULL)
 	{
-		_putchar('\0');
+		write(1, '\0', 1);
 		return;
 	}
 
