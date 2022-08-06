@@ -19,7 +19,7 @@ void print_all(const char *const format, ...)
 	double nf;
 	size_t i = 0;
 
-	while (format == NULL || vp == NULL)
+	while (format == NULL)
 	{
 		write(1, '\0', 1);
 		return;
