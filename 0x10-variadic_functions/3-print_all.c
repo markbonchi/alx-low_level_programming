@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <string.h>
-#include <stddef.h>
+#include <unistd.h>
 
 /**
  * print_all - prints anything by flags
@@ -10,6 +10,17 @@
  */
 
 void separator(size_t i, const char *const format);
+
+/**
+ * _putchar - printd character
+ * @c: ascii character
+ * Return: write
+ */
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 
 void print_all(const char *const format, ...)
 {
@@ -20,7 +31,10 @@ void print_all(const char *const format, ...)
 	size_t i = 0;
 
 	while (format == NULL || vp == NULL)
+	{
+		_putchar('\0');
 		return;
+	}
 
 	va_start(vp, format);
 	while (format[i] != '\0')
