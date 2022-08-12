@@ -4,6 +4,11 @@
 #include "lists.h"
 
 /**
+ * add_node_end - adds new nodes at the end of a list_t list
+ * @head: pointer to a pointer to first node
+ * @str: string
+ *
+ * Return: temp node
  */
 
 list_t *add_node_end(list_t **head, const char *str)
