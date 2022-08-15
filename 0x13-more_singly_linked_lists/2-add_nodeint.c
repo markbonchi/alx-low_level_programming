@@ -5,7 +5,7 @@
 /**
  * add_nodeint - adds node at the beginning of a listint_t list
  * @head: head pointer address
- * @n - constant int
+ * @n: constant int
  *
  * Return: new
  */
