@@ -3,6 +3,10 @@
 #include "lists.h"
 
 /**
+ * sum_listint - returns the sum of the data (n) in a listint_t linked list
+ * @head: head pointer
+ *
+ * Return: sum
  */
 
 int sum_listint(listint_t *head)
@@ -14,7 +18,7 @@ int sum_listint(listint_t *head)
 		return (sum);
 
 	ptr = head;
-	while(ptr != NULL)
+	while (ptr != NULL)
 	{
 		sum += ptr->n;
 		ptr = ptr->next;
