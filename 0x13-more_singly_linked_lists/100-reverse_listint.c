@@ -3,13 +3,17 @@
 #include "lists.h"
 
 /**
+ * reverse_listint - reverses a listint_t linked list
+ * @head: pointer to head pointer
+ *
+ * Return: head
  */
 
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *ptr1 = NULL, *ptr2 = NULL;
 
-	if (!*head)
+	if (*head == NULL)
 		return (NULL);
 
 	ptr1 = *head;
