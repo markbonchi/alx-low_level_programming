@@ -9,7 +9,7 @@
  * @filename: text file
  * @letters: size of text file
  *
- * Return: r_num || 
+ * Return: r_num || 0
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
