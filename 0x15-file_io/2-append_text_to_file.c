@@ -23,7 +23,6 @@ int _strlen(char *str);
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file, write_file;
-	char *fail = "fails"
 
 	if (filename == NULL)
 		return (-1);
