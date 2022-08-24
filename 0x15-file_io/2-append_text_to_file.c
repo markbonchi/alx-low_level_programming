@@ -20,8 +20,6 @@ int _strlen(char *str);
  * Return: 1 (Success) || -1 (Failure)
  */
 
-int _strlen(char *str);
-
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file, write_file;
