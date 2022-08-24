@@ -3,18 +3,23 @@
 #include <fcntl.h>
 #include "main.h"
 
+
 /**
- * create_file - function that creates a file
- *
  * _strlen - finds the length of a string
- * @filename: Name of text file
- * @text_content: string
- * @str: string
+ * @str: string parameter
  *
- * Return: 1 (Success) || -1 (Failure)
+ * Return: len
  */
 
 int _strlen(char *str);
+
+/**
+ * create_file - function that creates a file
+ * @filename: Name of text file
+ * @text_content: string
+ *
+ * Return: 1 (Success) || -1 (Failure)
+ */
 
 int create_file(const char *filename, char *text_content)
 {
@@ -37,7 +42,7 @@ int create_file(const char *filename, char *text_content)
 		return (1);
 	}
 	close(file);
-	return (-1);
+	return (1);
 }
 
 /**
