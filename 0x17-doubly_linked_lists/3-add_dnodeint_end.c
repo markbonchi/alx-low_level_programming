@@ -1,6 +1,10 @@
 #include "lists.h"
 
 /**
+ * add_dnodeint_end - Adds new node to dlistiint_t list
+ * @head: pointer to head
+ * @n: struct element
+ * Return: new_node 
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
