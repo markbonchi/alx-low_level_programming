@@ -1,6 +1,9 @@
 #include "lists.h"
 
 /**
+ * print_dlistint - prints elements if a doubly linked list
+ * @h: head pointer
+ * Return: i (size of list)
  */
 
 size_t print_dlistint(const dlistint_t *h)
@@ -14,6 +17,6 @@ size_t print_dlistint(const dlistint_t *h)
 		printf("%d\n", temp->n);
 		temp = temp->next;
 	}
-	return i;
+	return (i);
 
 }
