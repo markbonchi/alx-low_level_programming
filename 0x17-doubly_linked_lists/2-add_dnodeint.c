@@ -28,3 +28,24 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	}
 	return (*head);
 }
+
+/**
+ * add_dnodeint2 - inserts node to complete broken list in a dlistint_t list
+ * @head: pointer to head
+ * @node: pointer to node
+ * Return: head
+ */
+
+dlistint_t *add_dnodeint2(dlistint_t **head, dlistint_t **node)
+{
+	dlistint_t *temp;
+
+	if (!*head || !*node)
+		return (NULL);
+
+	temp = *head;
+	(*head)->prev = *node;
+	(*node)->next = temp;
+	*head = *node;
+	return (*head);
+}
