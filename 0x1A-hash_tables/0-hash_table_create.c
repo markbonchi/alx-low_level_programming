@@ -1,6 +1,9 @@
 #include "hash_tables.h"
 
 /**
+ * hash_table_create - creates an empty hash table
+ * @size: size of the hash map
+ * Return: table
  */
 
 hash_table_t *hash_table_create(unsigned int size)
@@ -17,7 +20,7 @@ hash_table_t *hash_table_create(unsigned int size)
 	if (arr == NULL)
 		return (NULL);
 
-	for(i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		arr[i] = NULL;
 
 	table->array = arr;
